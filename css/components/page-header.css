@@ -1,0 +1,38 @@
+/* ===== PAGE HEADER ===== */
+.page-header {
+  padding: 160px 0 var(--space-16);
+  background: var(--color-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-header h1 {
+  font-size: var(--text-5xl);
+  color: var(--color-white);
+  letter-spacing: -1px;
+  margin-bottom: var(--space-3);
+}
+
+.page-header p {
+  font-size: var(--text-lg);
+  color: rgba(255,255,255,0.5);
+  max-width: 480px;
+}
+
+@media (max-width: 768px) {
+  .page-header { padding: 130px 0 var(--space-10); }
+  .page-header h1 { font-size: var(--text-4xl); }
+}

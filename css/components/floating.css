@@ -1,0 +1,59 @@
+/* ===== FLOATING BUTTONS ===== */
+.float-whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: var(--space-6);
+  z-index: 900;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+  transition: var(--transition);
+}
+
+.float-whatsapp:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 30px rgba(37,211,102,0.45);
+}
+
+.float-whatsapp img {
+  width: 28px;
+  height: 28px;
+}
+
+.float-top {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  z-index: 900;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+}
+
+.float-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.float-top:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
